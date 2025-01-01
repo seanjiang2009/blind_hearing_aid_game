@@ -1,0 +1,9 @@
+# Python version 3.10.16 (recommended environment version)
+python==3.10.16
+
+# Required packages and their versions
+numpy==2.2.1
+mss==10.0.0
+scipy==1.14.1
+pygame==2.6.1
+ursina==7.0.0
