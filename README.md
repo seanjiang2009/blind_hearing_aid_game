@@ -1,4 +1,4 @@
-Installation:
+Installation (see requirements.txt):
 Python version 3.10.16
 
 Package versions:
