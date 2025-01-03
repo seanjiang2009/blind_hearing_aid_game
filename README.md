@@ -8,7 +8,7 @@ Package versions:
 - pygame 2.6.1
 - ursina 7.0.0
 
-Overview:
+# Overview:
 
 This project is a 3D first-person game built with the Ursina game engine. The game features spatial audio effects powered by Pygame and dynamic screen depth data processed using mss and NumPy.
 
