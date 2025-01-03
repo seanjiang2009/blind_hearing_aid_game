@@ -14,11 +14,11 @@ This project is a 3D first-person game built with the Ursina game engine. The ga
 
 In the game, the player, who supposed to play blindfolded or with their eyes closed, navigates through a 3D environment filled with obstacles while experiencing real-time spatial audio feedback based on screen depth mapping.
 
-Known Issues:
+# Known Issues:
 - Ensure that all sound files are present in the music_3 folder.
 - The game requires a consistent screen resolution(1280x960) for optimal performance.
 
-Gameplay and rules:
+# Gameplay and rules:
 - First-Person Perspective: Explore the environment using a first-person controller with WASD for movement and the mouse to look around (Q to quit game)
 - Random Obstacles: Each game session generates 100 obstacles of random height and position.
 - Collision Detection: Colliding with walls or obstacles triggers a sound and restarts the game.
@@ -26,21 +26,21 @@ Gameplay and rules:
 
 ![alt text](Images/game_recording-1.gif)
 
-Code Explained:
-Depth Mapping:
+# Code Explained:
+## Depth Mapping:
 1. Screen Capturing: The game window is continuously captured in the background with mss screenshots
 2. Data Analysis: The depth map is extracted and divided into spatial sections using scipy.ndimage.zoom (far left, left, middle to upper center or just mid center, bottom center, right, and far right).
 ![alt text](Images/image-3.png)
 
-Audio Cues:
+## Audio Cues:
 1. Channels: Each section maps to an audio channel.
 2. The volume of each audio channel adjusts based on the average depth detected in its region (a closer obstacle generates a louder audio cue, reflecting the virtual environment)
 ![alt text](Images/image-1.png)
 ![alt text](Images/image-2.png)
 
-Licence:
+# Licence:
     - This project is licensed under the MIT License.
 
-Contact:
+# Contact:
 If you have any questions please contact seanjiang2009@gmail.com
 
